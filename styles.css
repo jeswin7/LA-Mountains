@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting Theme */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+/* Page 1: Home */
+.home {
+    background-image: url('Source/page1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 25px;
+
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.header-links a {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.separator-links a {
+    margin-right: 20px;
+    color: rgb(87, 82, 82);
+}
+
+/* Page 2: History */
+.history {
+    background-image: url('history-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.separator-text {
+    background-color: #fff;
+}
+
+/* Page 3: Climb */
+.climb {
+    background-image: url('Source/page3.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.climb-navbar {
+    background-color: #3c486e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mountain-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Align links horizontally in the center */
+    align-items: center;
+    text-align: center;
+}
+
+.mountain-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.mountain-links a {
+    display: inline-block;
+    color: white;
+}
+
+.mountain-links a {
+    font-weight: bold;
+    font-weight: 800;
+}
+
+.mountain-links a:hover {
+    background-color: lightgray;
+}
+
+/* Style for the active link */
+.mountain-links a.active {
+    background-color: grey;
+    color: rgb(60, 60, 91);
+    padding: 20px;
+}
+
+/* For Carousel */
+.carousel-item {
+    padding: 0 10px;
+}
+
+.carousel-control {
+    height: 50px;
+}
+
+.carousel-control.left {
+    background-image: none; /* Remove default arrow background */
+}
+
+.carousel-control.right {
+    background-image: none;  /* Remove default arrow background */
+}
+
+.carousel-indicators {
+    bottom: 0; /* Position the indicators at the bottom */
+}
+
+.carousel-indicators li {
+    border: 1px solid #fff; /* Add border to indicators */
+    background-color: #3c486e; /* Set background color of indicators */
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Set active indicator color */
+}
+
+.history {
+    position: relative;
+}
+
+.carousel-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #3c486e;
+    opacity: 85%;
+    padding: 20px;
+}
+
+a{
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+}

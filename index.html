@@ -1,0 +1,110 @@
+<!-- Project: LA Mountains -->
+<!-- Author: Jeswin Johncy -->
+<!-- Assumptions: Since it is stated PSD->HTML, I am levergaing pure HTML, CSS and Bootstrap only to create a static website -->
+<!-- Supporting tool(s): For logo, I used 'photoaid' to crop in a round manner, slice tool to retrive images from the given PSD -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LA Mountains</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <!-- Page 1: Home -->
+  <section class="home">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Source/logo_only.png" alt="Logo" width="75%" height="75%">
+      </div>
+      <ul class="nav-links">
+        <li class="header-links"><a href="history.html">01. HISTORY</a></li>
+        <li class="header-links"><a href="team.html">02. TEAM</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Source/logo.png" alt="Logo" />
+    </div>
+    <ul class="nav-links">
+      <li class="separator-links"><a href="history.html">01. HISTORY</a></li>
+      <li class="separator-links"><a href="team.html">02. TEAM</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page 2: History -->
+  <section class="history">
+    <div class="history-content">
+      <img src="Source/page2.png" width="100%" height="100%" />
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div class="container">
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="Source/carousel_image1.png" alt="Scenary 1" class="img-responsive">
+                </div>
+                <div class="col-xs-3">
+                  <img src="Source/carousel_image2.png" alt="Scenary 2" class="img-responsive">
+                </div>
+                <div class="col-xs-3">
+                  <img src="Source/carousel_image1.png" alt="Scenary 3" class="img-responsive">
+                </div>
+                <div class="col-xs-3">
+                  <img src="Source/carousel_image2.png" alt="Scenary 4" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="1" class="active"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Separator -->
+  <div class="separator">
+    <img src="Source/separator.png" width="100%" height="100%" />
+  </div>
+
+  <!-- Page 3: Climb -->
+  <section class="climb">
+    <nav class="climb-navbar">
+      <ul class="mountain-links">
+        <li><a href="#mountain1" class="active">MOUNTAIN 1</a></li>
+        <li><a href="#mountain2">MOUNTAIN 2</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <footer class="footer">
+    <img src="Source/footer.png" width="100%" height="100%" />
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
